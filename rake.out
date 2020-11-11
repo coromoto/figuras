@@ -1,0 +1,177 @@
+############### FALLO ####################### 
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Gema
+  has a version number
+  does something useful (FAILED - 1)
+
+Failures:
+
+  1) Gema does something useful
+     Failure/Error: expect(false).to eq(true)
+
+       expected: true
+            got: false
+
+       (compared using ==)
+
+       Diff:
+       @@ -1 +1 @@
+       -true
+       +false
+     # ./spec/gema_spec.rb:7:in `block (2 levels) in <top (required)>'
+
+Finished in 0.02158 seconds (files took 0.14764 seconds to load)
+2 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/gema_spec.rb:6 # Gema does something useful
+
+===============================================================
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Gema
+  has a version number
+  does something useful
+
+Finished in 0.00231 seconds (files took 0.12474 seconds to load)
+2 examples, 0 failures
+
+############### FALLO ####################### 
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+An error occurred while loading spec_helper. - Did you mean?
+                    rspec ./spec/spec_helper.rb
+
+Failure/Error: require "gema/punto"
+
+LoadError:
+  cannot load such file -- gema/punto
+# ./lib/gema.rb:2:in `require'
+# ./lib/gema.rb:2:in `<top (required)>'
+# ./spec/spec_helper.rb:2:in `require'
+# ./spec/spec_helper.rb:2:in `<top (required)>'
+No examples found.
+No examples found.
+
+
+Finished in 0.00006 seconds (files took 0.11065 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
+Finished in 0.00006 seconds (files took 0.11065 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
+=======================================================================
+
+touch lib/gema/punto.rb   #se crea el fichero punto.rb
+
+usuario@ubuntu:~/LPP/gema$ rake
+Warning: the running version of Bundler (2.1.2) is older than the version that created the lockfile (2.1.4). We suggest you to upgrade to the version that created the lockfile by running `gem install bundler:2.1.4`.
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Gema
+  has a version number
+  does something useful
+
+Finished in 0.00486 seconds (files took 0.14971 seconds to load)
+2 examples, 0 failures
+
+############### FALLO ####################### 
+
+RSpec.describe Gema do
+  it "has a version number" do
+    expect(Gema::VERSION).not_to be nil
+  end
+
+  it "does something useful" do
+    expect(true).to eq(true)
+  end
+
+  describe Punto do     # se añade la necesidad de la clase Punto
+  end
+end
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+An error occurred while loading ./spec/gema_spec.rb.
+Failure/Error:
+  describe Punto do
+  end
+
+NameError:
+  uninitialized constant Punto
+# ./spec/gema_spec.rb:10:in `block in <top (required)>'
+# ./spec/gema_spec.rb:1:in `<top (required)>'
+
+=======================================================================
+Se crea la clase Punto en el fichero lib/gema/punto.rb
+
+class Punto
+end
+
+
+Finished in 0.00007 seconds (files took 0.16713 seconds to load)
+0 examples, 0 failures, 1 error occurred outside of examples
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Gema
+  has a version number
+  does something useful
+
+Finished in 0.00268 seconds (files took 0.13413 seconds to load)
+2 examples, 0 failures
+
+############### FALLO ####################### 
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Gema
+  has a version number
+  does something useful
+  Punto
+    Se debe poder instanciar un punto (FAILED - 1)
+
+Failures:
+
+  1) Gema Punto Se debe poder instanciar un punto
+     Failure/Error: expect(Punto.new(0,0)).not_to eq(nil)
+
+     ArgumentError:
+       wrong number of arguments (given 2, expected 0)
+     # ./spec/gema_spec.rb:12:in `initialize'
+     # ./spec/gema_spec.rb:12:in `new'
+     # ./spec/gema_spec.rb:12:in `block (3 levels) in <top (required)>'
+
+Finished in 0.00242 seconds (files took 0.11732 seconds to load)
+3 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/gema_spec.rb:11 # Gema Punto Se debe poder instanciar un punto
+
+=======================================================================
+Se añade a la clase Punto en el fichero lib/gema/punto.rb el método initialize
+
+class Punto
+	def initialize(x,y)
+		@x,@y = x, y
+	end
+end
+
+
+/home/usuario/.rvm/rubies/ruby-2.7.0/bin/ruby -I/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/lib:/home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-support-3.10.0/lib /home/usuario/.rvm/gems/ruby-2.7.0/gems/rspec-core-3.10.0/exe/rspec --pattern spec/\*\*\{,/\*/\*\*\}/\*_spec.rb
+
+Gema
+  has a version number
+  does something useful
+  Punto
+    Se debe poder instanciar un punto
+
+Finished in 0.00236 seconds (files took 0.12499 seconds to load)
+3 examples, 0 failures
+
