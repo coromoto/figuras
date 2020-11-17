@@ -9,5 +9,8 @@ RSpec.describe Gema do
 	 it "Se accede correctamente a la coordenada x" do  # Describe una prueba 
 		 expect(@origen.x).to eq(0)
 	 end
+	 it "Se accede correctamente a la coordenada y" do  # Describe una prueba 
+		 expect(@origen.y).to eq(0)
+	 end
   end
 end
