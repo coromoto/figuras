@@ -50,6 +50,7 @@ GEM
     rspec-support (3.10.0)
     shellany (0.0.1)
     thor (1.0.1)
+    yard (0.9.25)
 
 PLATFORMS
   ruby
@@ -60,6 +61,7 @@ DEPENDENCIES
   guard
   rake (~> 12.0)
   rspec (~> 3.0)
+  yard
 
 BUNDLED WITH
    2.1.4
