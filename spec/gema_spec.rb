@@ -12,6 +12,12 @@ RSpec.describe Gema do
       @cinco  = Punto.new(:amarillo, 1.0, 4.0, 0.0)
       @tanda  = [@uno, @dos, @tres, @cuatro, @cinco]
     end
+    it "Confirmar que el array de puntos es enumerable " do
+      expect(@tanda.is_a?Enumerable).to eq(@uno)
+    end
+    it "Jerarquía de clases de Punto " do
+      expect(Punto.ancestors).to eq([])
+    end
     it "Calcular el punto que tiene máxima distancia al origen " do
       expect(@tanda.max).to eq(@uno)
     end
