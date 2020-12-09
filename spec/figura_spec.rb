@@ -17,6 +17,12 @@ RSpec.describe Gema do
 	    	 end
 	 end
 	 context "Herencia de Figuras" do 
+	    	 it "La superclase de Object es BasicObject" do  
+			 expect(Object.superclass).to eq(BasicObject)
+	    	 end
+	    	 it "La superclase de Figura es Object" do  
+			 expect(Figura.superclass).to eq(Object)
+	    	 end
 	    	 it "La superclase de Punto es Figura" do  
 			 expect(Punto.superclass).to eq(Figura)
 	    	 end
